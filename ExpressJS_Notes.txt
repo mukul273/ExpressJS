@@ -1,0 +1,53 @@
+ExpresssJS Notes
+
+Unopinionated minimalist Framework that works on top of Node JS
+Its helps server and routing
+Its asynchronous and Singloe threaded
+
+Set up
+npm install -g express (Installs expressJS)
+
+npm install -g express-generator (installs express-generator)
+
+express(dowloads the boilerplate project)
+
+Jade is a high performance template engine heavily influenced by Haml and implemented with JavaScript for node and browsers. 
+
+Set up express server
+
+npm init at folder level to create the package.json
+keep hitting "enter" until "Yes" and then package.json shoudl be created
+create app.js and enter below lines
+
+var express = require('express');
+var app = express();
+var port = 8000;
+app.listen(port);
+console.log('Express Server Started...');
+
+change the index.js to app.js in package.json and then run 
+npm install --save express
+
+this will update the package.json with express dependency and its version
+
+now run 
+node app.js OR node app--- this should start the node server with message as express server started as discussed above
+npm install -g nodemon
+
+nodemon automatically restarts the server after you make the changes to file(s) and save them
+
+
+** Very imp after installing the nodemon....no need to use node app instead use below command
+nodemon app
+
+** Try changing something like console log in app.js
+
+Morgan is a middleware that logs the data into console.
+Bodyparse uses request.body to retrive data from front end
+
+some of the template engines are
+EmbeddedJS (ejs)
+handlebars
+swig
+
+
